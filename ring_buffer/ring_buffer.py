@@ -1,8 +1,8 @@
 class RingBuffer:
-    def __init__(self, capacity, data=[]):
+    def __init__(self, capacity):
         self.index = 0
         self.capacity = capacity
-        self.data = list(data)[-capacity:]
+        self.data = []
 
     def append(self, item):
         if len(self.data) == self.capacity:
